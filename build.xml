@@ -7,6 +7,8 @@
 <property name ="result.jar.file" location="./Myproduct.jar"/>
 <target name="compile">
 <mkdir dir ="${result.javaclasses.dir}"/>
+<javac srcdir="${src.java.dir}" destdir="${result.javaclasses.dir}" debug="true" includeantruntime="false" classpath="C:\Users\laptop center\eclipse-workspace\lib\junit-4.12">
+</javac>
 </target>
 	        <!-- comment Make jar or executable product -->
 <target name ="jar" depends ="compile">
@@ -15,16 +17,7 @@
 	  </fileset>
 	   </jar>
 	    </target> 
-	<junit printsummary="yes" haltonfailure="yes">
-	    <classpath>
-	        <path refid="your.classpath.refid" />
-	        <fileset dir="${junit.dir}">
-	            <include name="**/junit.jar" />
-	        </fileset>
-	    </classpath>
-	  
-	</junit>
-	        
+		
 		
 	<path id="NecessaryLibraries">
 	<pathelement location="./used_lib/junit-4.12.jar"/>
@@ -35,7 +28,7 @@
 	         
 	   <target name="compile-testcases" depends="compile">
 	       <mkdir dir="${result.testclasses.dir}"/>
-	       <javac srcdir="${src.test.dir}" destdir="${result.testclasses.dir}" debug="true" includeantruntime="false" classpath="C:\Users\laptop center\eclipse-workspace\lib\junit-4.12">
+	       <javac srcdir="${src.test.dir}" destdir="${result.testclasses.dir}" debug="true" includeantruntime="false" classpath="C:\Users\Jerusalem\workspace\lib\junit-4.12">
 	           <classpath>
 	            <path refid="NecessaryLibraries"/>
 	              <pathelement location="${result.javaclasses.dir}"/>
