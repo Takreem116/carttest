@@ -1,14 +1,14 @@
 package roaahw1;
 
 public class Pro {
-	String name;
+	String na;
 	int qun;
-	int price;
+	int pri;
 
 	public Pro(String string, int i, int j) {
-		name=string;
+		na=string;
 		qun=i;
-		price=j;
+		pri=j;
 		// TODO Auto-generated constructor stub
 	}
 

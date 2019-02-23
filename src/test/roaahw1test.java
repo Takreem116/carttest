@@ -16,7 +16,7 @@ public class roaahw1test {
 	@Test
 	public void test1() {
 		Cart c = new Cart ();
-		assertEquals(0,c.getCount());
+		assertEquals(0,c.getCou());
 	}
 
 	@Test
@@ -24,7 +24,7 @@ public class roaahw1test {
 		Cart c = new Cart ();
 		Pro p = new Pro("web",1,127);
 		c.add(p);
-		assertEquals(1,c.getCount());
+		assertEquals(1,c.getCou());
 	}
 	@Test
 	public void test3() {
@@ -33,8 +33,8 @@ public class roaahw1test {
 		Pro P= new Pro("java",1,100);
 		c.add(p);
 		c.add(P);
-		assertEquals(2,c.getCount());
-		assertEquals(227,c.getPrice());
+		assertEquals(2,c.getCou());
+		assertEquals(227,c.getPri());
 	}
 	
 
